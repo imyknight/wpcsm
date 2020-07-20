@@ -24,6 +24,7 @@ export default BlogPostTemplate
 export const query = graphql`
   query($id: Int!) {
     wordpressPost (wordpress_id: { eq: $id })  {
+    title
     content
     excerpt
     date
